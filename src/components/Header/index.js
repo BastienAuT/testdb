@@ -9,7 +9,7 @@ const Header = () => (
           <Link to="/">ACCUEIL</Link>
         </li>
         <li className="header__listItem">
-        <NavLink to="/cv">CV</NavLink>
+        <NavLink to="cv">CV</NavLink>
         </li>
         <li className="header__listItem">
         <a href="https://github.com/BastienAuT" title="github">GITHUB</a>
