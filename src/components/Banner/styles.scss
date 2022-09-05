@@ -1,0 +1,31 @@
+@use "../../styles/vars";
+@use "sass:color";
+
+.banner {
+    font-family: 'bebasneue';
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #f8f9fc;
+    height: 40rem;
+    margin:auto;
+    align-items: center;
+
+    &__image {
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        max-width: 17%;
+    }
+
+
+    &__text {
+        font-size: 6rem;
+        text-align: center;
+        color:#6e6e6e;
+    }
+
+    .typeit {
+        color: #f9004d;
+        font-size: 11rem;
+        font-weight: bold;
+    }
+}

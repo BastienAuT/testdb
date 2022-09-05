@@ -1,0 +1,112 @@
+@use "../../styles/vars";
+@use "sass:color";
+
+.projets {
+  font-family: "nunito";
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+  &__card {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 0, 0.041);
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    width: 25rem;
+    height: 30rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-bottom-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    box-shadow: 1px 1px 30px 7px #ff00005d;
+    
+  }
+
+  &__card:hover {
+    filter: blur(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+    border: 1px solid rgba(255, 251, 0, 0.336);
+  }
+
+  div:hover {
+    filter: grayscale(0%);
+    background-color: rgba(111, 0, 255, 0.089);
+  }
+
+  &__title {
+    list-style: none;
+    margin-top: 1rem;
+  }
+
+  &__button {
+    background: linear-gradient(0deg, #1900ff, #0077ff);
+    list-style: none;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10%;
+  }
+
+  span {
+    list-style: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-left:2rem;
+    margin-right: 2rem;
+
+  }
+
+  a:link {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+  #projet {
+    background: linear-gradient(60deg, #93291e, #ed213a);
+  }
+
+  #projet1 {
+    background: linear-gradient(0deg, #ed213a, #93291e);
+  }
+
+  #projet2 {
+    background: linear-gradient(30deg, #93291e, #ed213a);
+  }
+
+  #projet3 {
+    background: linear-gradient(90deg, #ed213a, #93291e);
+  }
+
+  #projet4 {
+    background: linear-gradient(60deg, #93291e, #ed213a);
+  }
+
+  #projet5 {
+    background: linear-gradient(0deg, #ed213a, #93291e);
+  }
+  #projet6 {
+    background: linear-gradient(30deg, #93291e, #ed213a);
+  }
+}

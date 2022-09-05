@@ -1,0 +1,58 @@
+@use "../../styles/vars";
+@use "sass:color";
+
+.header {
+  &__list {
+    display: flex;
+    font-family: "bebasneue";
+    justify-content: flex-end;
+    margin-bottom: 8rem;
+    margin-right: 8rem;
+
+ 
+    a {
+      display: flex;
+      text-decoration: none;
+      color:#6e6e6e;
+      font-weight: bolder;
+      font-size: 8rem;
+      border-bottom-left-radius: 30%;
+      margin-left: 5rem;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:visited {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      filter: blur(0);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      -webkit-transform: scale(1);
+      transform: scale(1.2);
+      color: #f9004d;
+    }
+
+    a:active {
+      text-decoration: none;
+    }
+  }
+
+  &__menu {
+    margin-bottom: 1.2rem;
+
+    ul {
+      list-style: none;
+      text-decoration: none;
+    }
+  }
+
+  &__listItem {
+    margin: 1rem;
+  }
+}

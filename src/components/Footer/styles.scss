@@ -1,0 +1,24 @@
+.footer {
+  background-color: #1e1f25;
+  padding: 10rem;
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    color: #a0a3af;
+    font-size: 5rem;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    filter: blur(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    color:#f9004d;
+  }
+}
