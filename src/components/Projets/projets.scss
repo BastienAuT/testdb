@@ -7,9 +7,8 @@
   flex-wrap: wrap;
   justify-content: center;
 
-
   &__card {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -25,16 +24,14 @@
     border-top-right-radius: 5%;
     border-bottom-left-radius: 5%;
     box-shadow: 1px 1px 30px 7px #ff00005d;
-    
   }
 
   &__card:hover {
-    filter: blur(0);
+    filter: blur(2px);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transform: scale(1);
     transform: scale(1.1);
-    border: 1px solid rgba(255, 251, 0, 0.336);
   }
 
   div:hover {
@@ -45,25 +42,43 @@
   &__title {
     list-style: none;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 5%;
+    font-size: 2rem;
+    text-decoration: underline white;
   }
 
   &__button {
-    background: linear-gradient(0deg, #1900ff, #0077ff);
     list-style: none;
     font-weight: bold;
     color: white;
     padding: 0.5rem;
     border-radius: 10%;
+    margin-bottom: 1rem;
+    border: 1px solid red;
+  }
+
+  &__button:hover {
+    background-color: #ff00002f;
+  }
+
+  &__text{
+    font-size: 1.3rem;
+  }
+
+  img {
+    width: 100%;
+    height: 40%;
   }
 
   span {
     list-style: none;
     font-weight: bold;
     color: white;
-    text-align: center;
-    margin-left:2rem;
+    margin-left: 2rem;
     margin-right: 2rem;
-
+    text-align: center;
   }
 
   a:link {
@@ -84,7 +99,7 @@
   }
 
   #projet {
-    background: linear-gradient(60deg, #93291e, #ed213a);
+    background: linear-gradient(60deg, #585858, #2e2e2e);
   }
 
   #projet1 {

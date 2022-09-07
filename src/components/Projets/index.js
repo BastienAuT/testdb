@@ -31,9 +31,10 @@ export default function Projets () {
     <div className="projets">
       {projets.map((projet) => (
         <div className="projets__card" key={projet.id} id={projet.id}>
-          <span className="projets__title" > {projet.data.name}</span>
+        <img className="projets__image" alt="oui" src={projet.data.image}></img> 
+        <span className="projets__title" > {projet.data.name}</span>
           <span className="projets__text"> {projet.data.text}</span>
-          <a className="projets__button" href={projet.data.url}> visitez moi</a>
+          <a className="projets__button" href={projet.data.url}> visiter</a>
         </div>
       ))}
     </div>
