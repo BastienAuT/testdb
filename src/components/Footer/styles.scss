@@ -1,12 +1,15 @@
+@use "../../styles/vars";
+@use "sass:color";
+
 .footer {
   background-color: #1e1f25;
-  padding: 10rem;
+  padding: 5rem;
 
   &__links {
     display: flex;
     justify-content: space-around;
     color: #a0a3af;
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   a {
@@ -21,4 +24,22 @@
     transform: scale(1.5);
     color:#f9004d;
   }
+}
+
+@media screen and (min-width: vars.$tablet) {
+.footer{
+  &__links {
+    font-size: 3rem;
+  }
+}
+
+}
+
+@media screen and (min-width: vars.$desktop) {
+.footer{
+  &__links {
+    font-size: 5rem;
+  }
+}
+
 }
