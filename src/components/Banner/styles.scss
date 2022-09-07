@@ -2,90 +2,87 @@
 @use "sass:color";
 
 .banner {
-    font-family: 'bebasneue';
-    display:flex;
-    justify-content: space-evenly;
-    background-color: #f8f9fc;
-    height: 25rem;
-    margin:auto;
-    align-items: center;
+  font-family: "bebasneue";
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f8f9fc;
+  height: 25rem;
+  margin: auto;
+  align-items: center;
 
-    &__image {
-        border-top-left-radius: 25%;
-        border-bottom-right-radius: 25%;
-        width: 30%;
-        margin-left: 1rem;
-    }
+  &__image {
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    width: 30%;
+    margin-left: 1rem;
+  }
 
+  &__text {
+    font-size: 2rem;
+    text-align: center;
+    color: #6e6e6e;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
-    &__text {
-        font-size: 2rem;
-        text-align: center;
-        color:#6e6e6e;
-    }
-
-    .typeit {
-        color: #f9004d;
-        font-size: 4.8rem;
-        font-weight: bold;
-    }
+  .typeit {
+    color: #f9004d;
+    font-size: 4.8rem;
+    font-weight: bold;
+  }
 }
 
 @media screen and (min-width: vars.$tablet) {
-    .banner{
+  .banner {
+    height: 40rem;
 
-        height: 40rem;
-
-    
-        &__image {
-            border-top-left-radius: 25%;
-            border-bottom-right-radius: 25%;
-            max-width: 30%;
-            
-        }
-    
-    
-        &__text {
-            font-size: 4rem;
-            text-align: center;
-            color:#6e6e6e;
-        }
-    
-        .typeit {
-            color: #f9004d;
-            font-size: 8rem;
-            font-weight: bold;
-        }
-    }
-    
+    &__image {
+      border-top-left-radius: 25%;
+      border-bottom-right-radius: 25%;
+      max-width: 30%;
     }
 
-    @media screen and (min-width: vars.$desktop) {
-        .banner{
-    
-            height: 50rem;
-            margin-bottom: 10rem;
-    
-        
-            &__image {
-                border-top-left-radius: 25%;
-                border-bottom-right-radius: 25%;
-                max-width: 25%;
-                
-            }
-        
-        
-            &__text {
-                font-size: 6rem;
-                text-align: center;
-                color:#6e6e6e;
-            }
-        
-            .typeit {
-                color: #f9004d;
-                font-size: 12rem;
-                font-weight: bold;
-            }
-        }
-        
-        }
+    &__text {
+      font-size: 4rem;
+      text-align: center;
+      color: #6e6e6e;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    .typeit {
+      color: #f9004d;
+      font-size: 8rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: vars.$desktop) {
+  .banner {
+    height: 50rem;
+    margin-bottom: 10rem;
+
+    &__image {
+      border-top-left-radius: 25%;
+      border-bottom-right-radius: 25%;
+      max-width: 25%;
+      margin-left: 2rem;
+    }
+
+    &__text {
+      font-size: 6rem;
+      text-align: center;
+      color: #6e6e6e;
+      margin-left: 14rem;
+      margin-right: 14rem;
+
+    }
+
+    .typeit {
+      color: #f9004d;
+      font-size: 12rem;
+      font-weight: bold;
+    }
+  }
+}

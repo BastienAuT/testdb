@@ -8,7 +8,6 @@ const Cv = () => (
     <div className="cv__button">
       <CvItem />
     </div>
-
     <img className="cv__image" src={cv} alt="cvdebastien"></img>
   </div>
 );
