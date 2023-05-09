@@ -33,7 +33,6 @@
     transform: scale(1.1);
   }
 
-
   &__title {
     list-style: none;
     margin-top: 0.5rem;
@@ -51,7 +50,6 @@
     border-radius: 10%;
     border: 1px solid white;
     margin-bottom: 1rem;
-    
   }
 
   &__button:hover {
@@ -60,7 +58,6 @@
 
   &__text {
     font-size: 1.1rem;
-
   }
 
   img {
@@ -120,10 +117,14 @@
   #projet6 {
     background: linear-gradient(300deg, #3a0505, #ed213a);
   }
+  #projet7 {
+    background: linear-gradient(300deg, #3a0505, #ed213a);
+  }
+
+  #projet8 {
+    background: linear-gradient(300deg, #3a0505, #ed213a);
+  }
 }
-
-
-
 
 @media screen and (min-width: vars.$desktop) {
   .projets {
@@ -131,25 +132,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
-    &__card {
 
+    &__card {
       margin-bottom: 5rem;
       margin-top: 5rem;
       width: 25rem;
       height: 30rem;
       margin-left: 10rem;
       margin-right: 10rem;
-
     }
-  
+
     &__card:hover {
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
       -webkit-transform: scale(1);
       transform: scale(1.1);
     }
-  
+
     &__title {
       list-style: none;
       margin-top: 1rem;
@@ -159,7 +158,7 @@
       font-size: 2rem;
       text-decoration: underline white;
     }
-  
+
     &__button {
       list-style: none;
       font-weight: bold;
@@ -169,20 +168,20 @@
       margin-bottom: 1rem;
       border: 1px solid white;
     }
-  
+
     &__button:hover {
       background-color: #00e5f562;
     }
-  
+
     &__text {
       font-size: 1.3rem;
     }
-  
+
     img {
       width: 100%;
       height: 40%;
     }
-  
+
     span {
       list-style: none;
       font-weight: bold;
@@ -191,44 +190,44 @@
       margin-right: 2rem;
       text-align: center;
     }
-  
+
     a:link {
       text-decoration: none;
       font-size: 2rem;
     }
-  
+
     a:visited {
       text-decoration: none;
     }
-  
+
     a:hover {
       text-decoration: none;
     }
-  
+
     a:active {
       text-decoration: none;
     }
-  
+
     #projet {
       background: linear-gradient(60deg, #3a0505, #ed213a);
     }
-  
+
     #projet1 {
       background: linear-gradient(120deg, #ed213a, #3a0505);
     }
-  
+
     #projet2 {
       background: linear-gradient(30deg, #3a0505, #ed213a);
     }
-  
+
     #projet3 {
       background: linear-gradient(90deg, #ed213a, #3a0505);
     }
-  
+
     #projet4 {
       background: linear-gradient(60deg, #3a0505, #ed213a);
     }
-  
+
     #projet5 {
       background: linear-gradient(180deg, #ed213a, #3a0505);
     }
@@ -236,5 +235,4 @@
       background: linear-gradient(300deg, #3a0505, #ed213a);
     }
   }
-
 }
